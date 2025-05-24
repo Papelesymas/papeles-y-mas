@@ -5,51 +5,42 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Papeles y +</title>
-<style>
-  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
-  header { display: flex; align-items: center; gap: 20px; padding: 40px; }
-  header img { width: 100px; border-radius: 8px; }
-  header div { flex: 1; }
-  header h1 { margin: 0; font-size: 2em; color: #0B2239; }
-  header p { margin: 0; color: #555; }
-  .whatsapp-btn { background: #4EC18D; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 6px; display: inline-block; margin: 20px 0; }
-  .services { display: flex; justify-content: space-around; padding: 40px; background: #f9f9f9; }
-  .service { text-align: center; width: 30%; }
-  .service h3 { margin-top: 10px; color: #0B2239; }
-  .service p { color: #555; }
-  footer { text-align: center; padding: 20px; font-size: 0.9em; color: #888; }
-</style>
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-white text-gray-800 font-sans">
 
-<header>
-  <img src="https://i.imgur.com/l0dJWZl.png" alt="Papeles y +" />
-  <div>
-    <h1>Tus trámites, más simples que nunca.</h1>
-    <p>Asistencia profesional en formularios migratorios, traducciones notariadas y viajes.</p>
-    <a href="https://wa.me/13468202633?text=Hola,%20estoy%20interesado%20en%20los%20servicios%20de%20Papeles%20y%20+" class="whatsapp-btn">Contáctanos por WhatsApp</a>
+<header class="flex flex-col md:flex-row items-center gap-8 p-10">
+  <img src="https://i.imgur.com/l0dJWZl.png" alt="Papeles y +" class="w-24 rounded-lg shadow" />
+  <div class="flex-1 text-center md:text-left">
+    <h1 class="text-3xl font-bold text-gray-900 mb-2">Tus trámites, más simples que nunca.</h1>
+    <p class="text-gray-600 mb-4">Asistencia profesional en formularios migratorios, traducciones notariadas y viajes.</p>
+    <a href="https://wa.me/13468202633?text=Hola,%20estoy%20interesado%20en%20los%20servicios%20de%20Papeles%20y%20+" target="_blank" class="inline-block bg-green-500 text-white px-6 py-2 rounded shadow hover:bg-green-600 transition">
+      Contáctanos por WhatsApp
+    </a>
   </div>
 </header>
 
-<section class="services">
-  <div class="service">
-    <img src="https://i.imgur.com/0e5l92Y.png" alt="Formularios" width="50" />
-    <h3>Formularios Migratorios</h3>
-    <p>Apoyo en formularios como I-130, I-765, N-400 y más.</p>
-  </div>
-  <div class="service">
-    <img src="https://i.imgur.com/ZK4qTL6.png" alt="Viajes" width="50" />
-    <h3>Asistencia en Viajes</h3>
-    <p>Reservas de vuelos, hoteles y autos en EE.UU. y otros países.</p>
-  </div>
-  <div class="service">
-    <img src="https://i.imgur.com/CyYaz6f.png" alt="Notaría" width="50" />
-    <h3>Notaría y Traducciones</h3>
-    <p>Servicios de notaría pública y traducciones certificadas.</p>
+<section class="bg-gray-100 py-10">
+  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+    <div>
+      <img src="https://i.imgur.com/0e5l92Y.png" alt="Formularios" class="mx-auto w-12 mb-2" />
+      <h3 class="text-lg font-semibold text-gray-900 mb-1">Formularios Migratorios</h3>
+      <p class="text-gray-600">Apoyo en formularios como I-130, I-765, N-400 y más.</p>
+    </div>
+    <div>
+      <img src="https://i.imgur.com/ZK4qTL6.png" alt="Viajes" class="mx-auto w-12 mb-2" />
+      <h3 class="text-lg font-semibold text-gray-900 mb-1">Asistencia en Viajes</h3>
+      <p class="text-gray-600">Reservas de vuelos, hoteles y autos en EE.UU. y otros países.</p>
+    </div>
+    <div>
+      <img src="https://i.imgur.com/CyYaz6f.png" alt="Notaría" class="mx-auto w-12 mb-2" />
+      <h3 class="text-lg font-semibold text-gray-900 mb-1">Notaría y Traducciones</h3>
+      <p class="text-gray-600">Servicios de notaría pública y traducciones certificadas.</p>
+    </div>
   </div>
 </section>
 
-<footer>
+<footer class="text-center text-gray-500 text-sm py-4 border-t">
   Papeles y + © Todos los derechos reservados.
 </footer>
 
